@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Yeseva+One&display=swap");
+
+:root{
+  --bone-white:#FBF8F1;
+  --soldier-green: #807141;
+  --grayish-black:#303030;
+  --dark-brown:#423525;
+  --bronze-gold:#C69E5B;
+  --bright-sand:#DDC8A0;
+
+}
+
+
+* {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background-color: var(--bone-white);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Yeseva One", cursive;
+}
+
+nav li a {
+  text-decoration: none;
+  color: var(--grayish-black);
+}
+
+nav li {
+  color: var(--soldier-green);
+  text-align: center;
+  list-style-type: none;
+  display: inline;
+  padding: 10px;
+}
+nav ul {
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+  padding-top: 3em;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  border-radius: 5px;
+  text-align: center;
+  background-color: var(--soldier-green);
+  color: var(--bone-white);
+  text-decoration: none;
+  padding: 10px 15px;
+  font-family: "Josefin Sans", sans-serif;
+}
