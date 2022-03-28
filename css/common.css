@@ -1,28 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Yeseva+One&display=swap");
 
-:root{
-  --bone-white:#FBF8F1;
-  --soldier-green: #807141;
-  --grayish-black:#303030;
-  --dark-brown:#423525;
-  --bronze-gold:#C69E5B;
-  --bright-sand:#DDC8A0;
-
+@font-face {
+  font-family: "Giaza Stencil";
+  src: url("/fonts/giaza-stencil.otf"),
+  url("/fonts/giaza-stencil.woff"),
+  url("/fonts/giaza-stencil.woff2");
 }
 
+@font-face {
+  font-family: "Catchy Mager";
+  src: url("/fonts/catchy-mager.otf"),
+   url("/fonts/catchy-mager.ttf"),
+   url("/fonts/catchy-mager.woff");
+}
+
+:root {
+  --bone-white: #fbf8f1;
+  --soldier-green: #807141;
+  --grayish-black: #303030;
+  --dark-brown: #423525;
+  --bronze-gold: #c69e5b;
+  --bright-sand: #ddc8a0;
+}
+.active {
+  border: 1px solid rgb(78, 74, 74);
+  border-radius: 5px;
+  padding: 3px 7px;
+}
 
 * {
-  font-family: "Josefin Sans", sans-serif;
+ /* font-family: "Catchy Mager", "Josefin Sans", sans-serif;*/
 }
 
 body {
   background-color: var(--bone-white);
+  font-family: "Catchy Mager";
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Yeseva One", cursive;
+  font-family: "Giaza Stencil", "Yeseva One", cursive;
 }
 
 nav li a {

@@ -4,11 +4,7 @@ img {
   border-radius: 25px;
 }
 
-.active {
-  border: 1px solid rgb(78, 74, 74);
-  border-radius: 5px;
-  padding: 3px 7px;
-}
+
 .hummus-tagline {
   text-align: center;
 }
