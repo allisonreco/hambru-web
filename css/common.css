@@ -2,16 +2,16 @@
 
 @font-face {
   font-family: "Giaza Stencil";
-  src: url("/fonts/giaza-stencil.otf"),
-  url("/fonts/giaza-stencil.woff"),
-  url("/fonts/giaza-stencil.woff2");
+  src: url("/fonts/giaza-stencil.otf"), url("/fonts/giaza-stencil.woff"),
+    url("/fonts/giaza-stencil.woff2");
 }
 
 @font-face {
   font-family: "Catchy Mager";
-  src: url("/fonts/catchy-mager.otf"),
-   url("/fonts/catchy-mager.ttf"),
-   url("/fonts/catchy-mager.woff");
+  src: url("/fonts/catchy-mager-no-ligature.otf"),
+    url("/fonts/catchy-mager-no-ligature.ttf"),
+    url("/fonts/catchy-mager-no-ligature.woff"),
+    url("/fonts/catchy-mager-no-ligature.woff2");
 }
 
 :root {
@@ -22,19 +22,37 @@
   --bronze-gold: #c69e5b;
   --bright-sand: #ddc8a0;
 }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .active {
   border: 1px solid rgb(78, 74, 74);
   border-radius: 5px;
   padding: 3px 7px;
 }
 
-* {
- /* font-family: "Catchy Mager", "Josefin Sans", sans-serif;*/
-}
-
 body {
   background-color: var(--bone-white);
   font-family: "Catchy Mager";
+  color: var(--dark-brown);
+  margin: 0;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  main,
+  footer {
+    padding: 1em;
+    margin: 0 auto;
+  }
 }
 
 h1,
@@ -59,12 +77,12 @@ nav ul {
   width: fit-content;
   display: block;
   margin: 0 auto;
+  padding-left: 0;
   padding-top: 3em;
 }
 
 .button {
   display: block;
-  margin: 0 auto;
   width: fit-content;
   border-radius: 5px;
   text-align: center;
@@ -72,5 +90,52 @@ nav ul {
   color: var(--bone-white);
   text-decoration: none;
   padding: 10px 15px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Catchy Mager";
+  transform: all 200ms ease-in-out;
+}
+.button:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 32px rgba(100, 79, 61, 0.2);
+  color: var(--bone-white);
+  background-color: var(--bright-sand);
+  border: var(--soldier-green);
+}
+
+footer {
+  width: 100%;
+  justify-content: space-around;
+  border-top: 1px solid var(--bright-sand);
+  margin-top: 2em;
+  color: var(--bright-sand);
+}
+
+footer > div {
+  margin: 0 auto;
+  display: flex;
+  max-width: 900px;
+  justify-content: space-between;
+}
+
+footer a {
+  color: var(--bright-sand);
+  text-decoration: none;
+}
+
+footer i {
+  color: var(--bronze-gold);
+}
+
+footer a:hover {
+  color: var(--soldier-green);
+  text-decoration: underline;
+  transition: all 200ms ease-in-out;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer ul li {
+  margin-left: 10px;
+  list-style-type: none;
 }
