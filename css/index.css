@@ -115,7 +115,7 @@ span > i {
   }
 
   .card > img {
-    width: 90vw;
+    width: 95vw;
     margin: 0 auto;
   }
 }
@@ -139,7 +139,7 @@ span > i {
 
   #hello-there img,
   .sustainability img {
-    width: 90vw;
+    width: 95vw;
     margin: 0 auto;
   }
 
@@ -161,6 +161,11 @@ span > i {
   padding: 1em;
   gap: 30px;
   margin-top: 3em;
+}
+
+.cta-copy > form {
+  display: flex;
+  gap: 10px;
 }
 
 @media screen and (max-width: 700px) {
