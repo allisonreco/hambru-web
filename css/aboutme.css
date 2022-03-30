@@ -14,6 +14,10 @@ img {
   width: 300px;
 }
 
+a {
+  color: var(--soldier-green);
+}
+
 .container {
   display: flex;
   flex-direction: row;
