@@ -1,0 +1,48 @@
+img {
+  border-radius: 25px;
+}
+a {
+  color: var(--soldier-green);
+}
+section {
+  display: flex;
+  margin: auto;
+  gap: 30px;
+  max-width: 850px;
+  margin-top: 3em;
+}
+h1 {
+  font-size: 40px;
+}
+h2{
+    font-family: "Giaza Stencil";
+    font-size: 40px;
+}
+
+h3{
+    font-family: "Catchy Mager";
+text-transform: uppercase;
+}
+
+
+
+.full-section{
+    flex-direction: column;
+}
+
+.full-section{
+    flex-direction: row;
+}
+
+.separator{
+text-align: center;    
+}
+
+.separator-img{
+    border-radius: 0;
+    text-align: center;
+    height: 40px;
+    width:500px;
+
+}
+
