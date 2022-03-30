@@ -31,6 +31,7 @@ body > a {
 
 body > img {
   margin: 0 auto;
+  margin-bottom: -4em;
   width: 100%;
   max-width: 600px;
 }
@@ -72,7 +73,6 @@ span > i {
 
 .hummus-tagline {
   text-align: center;
-  margin-top: -3em;
   font-size: 20px;
 }
 
@@ -96,7 +96,7 @@ span > i {
   max-width: 200px;
 }
 
-.card > img {
+.card > a > img {
   box-shadow: 10px 10px 20px rgba(166, 132, 132, 0.2);
 }
 
@@ -112,10 +112,11 @@ span > i {
   .card {
     margin: 0 auto;
     max-width: unset;
+    width: 90vw;
   }
 
-  .card > img {
-    width: 95vw;
+  .card > a > img {
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -139,7 +140,7 @@ span > i {
 
   #hello-there img,
   .sustainability img {
-    width: 95vw;
+    width: 100%;
     margin: 0 auto;
   }
 

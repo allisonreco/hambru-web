@@ -43,15 +43,15 @@ body {
   line-height: 1.4;
 }
 
+main,
+footer {
+  padding: 0.5em;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 700px) {
   body {
     overflow-x: hidden;
-  }
-
-  main,
-  footer {
-    padding: 1em;
-    margin: 0 auto;
   }
 }
 

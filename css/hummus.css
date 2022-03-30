@@ -6,43 +6,64 @@ a {
 }
 section {
   display: flex;
+  justify-content: space-between;
   margin: auto;
-  gap: 30px;
+  column-gap: 30px;
   max-width: 850px;
   margin-top: 3em;
 }
+
 h1 {
   font-size: 40px;
 }
-h2{
-    font-family: "Giaza Stencil";
-    font-size: 40px;
+h2 {
+  margin-top: 0;
+  font-family: "Giaza Stencil";
+  font-size: 40px;
 }
 
-h3{
-    font-family: "Catchy Mager";
-text-transform: uppercase;
+h3 {
+  font-family: "Catchy Mager";
+  text-transform: uppercase;
 }
 
-
-
-.full-section{
-    flex-direction: column;
+.reverse {
+  flex-direction: row-reverse;
 }
 
-.full-section{
-    flex-direction: row;
+.section-full {
+  flex-direction: column;
+  row-gap: 0;
 }
 
-.separator{
-text-align: center;    
+.section-full > div {
+  flex: 1;
 }
 
-.separator-img{
-    border-radius: 0;
-    text-align: center;
-    height: 40px;
-    width:500px;
-
+.separator {
+  text-align: center;
 }
 
+.separator-img {
+  border-radius: 0;
+  text-align: center;
+  height: 40px;
+  width: 500px;
+}
+
+@media screen and (max-width: 700px) {
+  section {
+    flex-direction: column-reverse;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+
+  .reverse {
+    flex-direction: column-reverse;
+  }
+
+  section img {
+    width: 100%;
+  }
+}

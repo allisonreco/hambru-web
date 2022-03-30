@@ -16,7 +16,6 @@ i {
   color: var(--bronze-gold);
 }
 
-.recipes,
 .blog-posts {
   display: flex;
   column-gap: 20px;
@@ -29,4 +28,27 @@ i {
 
 .blog-card {
   width: 164px;
+}
+
+@media screen and (max-width: 380px) {
+  .blog-posts {
+    display: flex;
+    row-gap: 50px;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .blog-card {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .blog-card > p {
+    margin-top: 0;
+  }
+
+  .blog-card > img {
+    width: 88vw;
+    margin: 0 auto;
+  }
 }
