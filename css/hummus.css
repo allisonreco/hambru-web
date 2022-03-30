@@ -36,8 +36,17 @@ h3 {
   row-gap: 0;
 }
 
+.section-full-row {
+  flex-direction: row;
+  row-gap: 0;
+}
+
 .section-full > div {
   flex: 1;
+}
+
+.section-split > div {
+  min-width: 300px;
 }
 
 .separator {

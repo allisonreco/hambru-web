@@ -121,14 +121,14 @@ span > i {
   }
 }
 
-#hello-there,
+.hello-there,
 .sustainability {
   display: flex;
   gap: 30px;
 }
 
 @media screen and (max-width: 700px) {
-  #hello-there {
+  .hello-there {
     display: flex;
     flex-direction: column;
   }
@@ -138,13 +138,13 @@ span > i {
     flex-direction: column-reverse;
   }
 
-  #hello-there img,
+  .hello-there img,
   .sustainability img {
     width: 100%;
     margin: 0 auto;
   }
 
-  #hello-there > div,
+  .hello-there > div,
   .sustainability > div {
     margin: 0 auto;
   }
